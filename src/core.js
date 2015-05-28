@@ -13,6 +13,9 @@ var getBounds = utils.getBounds;
 var html2canvasNodeAttribute = "data-html2canvas-node";
 var html2canvasCloneIndex = 0;
 
+var window = window || {};
+window.html2canvas = {};
+
 function html2canvas(nodeList, options) {
     var index = html2canvasCloneIndex++;
     options = options || {};
